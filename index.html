@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <style>
-        a{
+        body {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+
         header {
             background: url('assets/imgs/neon.jpg');
             background-size: cover;
@@ -26,13 +27,31 @@
                 min-height: 500px;
             }
         }
+
+        .margin-top20 {
+            margin-top: 20px;
+        }
+
+        .sidenav-trigger {
+            color: #26a69a;
+        }
+
+        .parallax-container {
+            min-height: 380px;
+            line-height: 0;
+            height: auto;
+            color: rgba(255, 255, 255, .9);
+        }
+
+        .parallax-container .section {
+            width: 100%;
+        }
     </style>
 
 
 </head>
 
-<body>
-
+<body class="purple-text text-accent-4">
 
     <!-- navbar -->
     <header>
@@ -56,16 +75,53 @@
         </nav>
     </header>
 
+    <!-- photo -->
+    <div class="container margin-top20">
+        <div class="row">
+            <div class="col s12 l4 center-align">
+                <img src="./assets/imgs/gameresize.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l6 center-align offset-l1" style="height: 75%;">
+                <h2 class="center-align">Game Neon</h2>
+                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 center-align push-l7 offset-l1" style="height: 75%;">
+                <img src="./assets/imgs/circleresize.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l6 center-align pull-l5">
+                <h2 class="center-align">Circle Neon</h2>
+                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 center-align" style="height: 75%;">
+                <img src="./assets/imgs/cupresize.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l6 center-align offset-l1">
+                <h2 class="center-align">Cup Neon</h2>
+                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
+            </div>
+        </div>
+        </session>
 
-    <!-- JQuery minified  -->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $('document').ready(function(){
-            $('.sidenav').sidenav();
-        })
-    </script>
+
+        <!-- JQuery minified  -->
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $('document').ready(function () {
+                $('.sidenav').sidenav();
+            })
+        </script>
 </body>
 
 </html>
