@@ -19,7 +19,7 @@
             background: url('assets/imgs/neon.jpg');
             background-size: cover;
             background-position: center;
-            min-height: 1000px;
+            min-height: 600px;
         }
 
         @media screen and (max-width: 670px) {
@@ -43,8 +43,13 @@
             color: rgba(255, 255, 255, .9);
         }
 
-        .parallax-container .section {
+        .parallax-container{
             width: 100%;
+        }
+
+        .center {
+            text-align: center;
+            border: 3px solid green;
         }
     </style>
 
@@ -78,8 +83,8 @@
     <!-- photo -->
     <div class="container margin-top20">
         <div class="row">
-            <div class="col s12 l4 center-align">
-                <img src="./assets/imgs/gameresize.jpg" alt="" class="responsive-img">
+            <div class="col s12 l4 center-align materialboxed">
+                <img src="./assets/imgs/gameresize.jpg" alt="" class="responsive-img ">
             </div>
             <div class="col s12 l6 center-align offset-l1" style="height: 75%;">
                 <h2 class="center-align">Game Neon</h2>
@@ -89,7 +94,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s12 l4 center-align push-l7 offset-l1" style="height: 75%;">
+            <div class="col s12 l4 center-align push-l7 offset-l1 materialboxed" style="height: 75%;">
                 <img src="./assets/imgs/circleresize.jpg" alt="" class="responsive-img">
             </div>
             <div class="col s12 l6 center-align pull-l5">
@@ -100,7 +105,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s12 l4 center-align" style="height: 75%;">
+            <div class="col s12 l4 center-align materialboxed" style="height: 75%;">
                 <img src="./assets/imgs/cupresize.jpg" alt="" class="responsive-img">
             </div>
             <div class="col s12 l6 center-align offset-l1">
@@ -110,18 +115,27 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
             </div>
         </div>
-        </session>
+    </div>
 
 
-        <!-- JQuery minified  -->
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
-            $('document').ready(function () {
-                $('.sidenav').sidenav();
-            })
-        </script>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./assets/imgs/eminem.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- JQuery minified  -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        })
+    </script>
 </body>
 
 </html>
