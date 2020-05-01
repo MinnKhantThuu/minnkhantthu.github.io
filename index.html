@@ -15,25 +15,8 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
-        header {
-            background: url('assets/imgs/neon.jpg');
-            background-size: cover;
-            background-position: center;
-            min-height: 600px;
-        }
-
-        @media screen and (max-width: 670px) {
-            header {
-                min-height: 500px;
-            }
-        }
-
         .margin-top20 {
             margin-top: 20px;
-        }
-
-        .sidenav-trigger {
-            color: #26a69a;
         }
 
         .parallax-container {
@@ -43,87 +26,139 @@
             color: rgba(255, 255, 255, .9);
         }
 
-        .parallax-container{
+        .parallax-container {
             width: 100%;
         }
 
-        .center {
-            text-align: center;
-            border: 3px solid green;
+        .text-center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
         }
     </style>
 
 
 </head>
 
-<body class="purple-text text-accent-4">
+<body class="grey-text">
 
-    <!-- navbar -->
-    <header>
-        <nav class="nav-wrapper transparent">
+    <!-- parallax -->
+    <div id="index-banner" class="parallax-container">
+        <!-- navbar -->
+        <header>
+            <nav class="nav-wrapper transparent">
+                <div class="container">
+                    <a href="" class="brand-logo">NeoN</a>
+                    <a href="" class="sidenav-trigger" data-target="menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#aboutus">about us</a></li>
+                        <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
+                    </ul>
+                    <ul class="sidenav grey lighten-3" id='menu'>
+                        <li><a href="#aboutus">about me</a></li>
+                        <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="section no-pad-bot">
             <div class="container">
-                <a href="" class="brand-logo">Hacky7</a>
-                <a href="" class="sidenav-trigger" data-target="menu">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">about me</a></li>
-                    <li><a href="#">sign-in</a></li>
-                    <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
-                </ul>
-                <ul class="sidenav grey lighten-3" id='menu'>
-                    <li><a href="#">about me</a></li>
-                    <li><a href="#">sign-in</a></li>
-                    <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
-                </ul>
+                <br><br>
+                <h1 class="header center" style="color: rgb(17, 0, 250);text-shadow: 2px 2px 4px #1697ca;">NeoN World
+                </h1>
+                <div class="row center">
+                    <h5 class="header col s12" style="color: rgb(0, 255, 115);text-shadow: 2px 2px 4px #1fa16b;">
+                        To Change Your Sight With NeoN
+                    </h5>
+                </div>
+
+                <div class="row center">
+                    <a href="#" id="download-button" class="btn-large waves-effect indigo accent-4">sign-in</a>
+                </div>
+                <br><br>
+
             </div>
-        </nav>
-    </header>
+        </div>
+        <div class="parallax"><img src="./assets/imgs/neon.jpg" alt=""></div>
+    </div>
 
     <!-- photo -->
     <div class="container margin-top20">
         <div class="row">
             <div class="col s12 l4 center-align materialboxed">
-                <img src="./assets/imgs/gameresize.jpg" alt="" class="responsive-img ">
+                <img src="./assets/imgs/gameresize.jpg" alt="" class="responsive-img circle">
             </div>
-            <div class="col s12 l6 center-align offset-l1" style="height: 75%;">
+            <div class="col s12 l6 center-align offset-l1">
                 <h2 class="center-align">Game Neon</h2>
-                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="center-align grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
         </div>
         <div class="row">
-            <div class="col s12 l4 center-align push-l7 offset-l1 materialboxed" style="height: 75%;">
-                <img src="./assets/imgs/circleresize.jpg" alt="" class="responsive-img">
+            <div class="col s12 l4 center-align push-l7 offset-l1 materialboxed " style="height: 75%;">
+                <img src="./assets/imgs/circleresize.jpg" alt="" class="responsive-img circle">
             </div>
             <div class="col s12 l6 center-align pull-l5">
                 <h2 class="center-align">Circle Neon</h2>
-                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="center-align grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col s12 l4 center-align materialboxed" style="height: 75%;">
-                <img src="./assets/imgs/cupresize.jpg" alt="" class="responsive-img">
+            <div class="col s12 l4 center-align materialboxed">
+                <img src="./assets/imgs/cupresize.jpg" alt="" class="responsive-img circle">
             </div>
             <div class="col s12 l6 center-align offset-l1">
                 <h2 class="center-align">Cup Neon</h2>
-                <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="center-align grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
             </div>
         </div>
     </div>
 
-
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="./assets/imgs/eminem.jpg" alt="">
+    <!-- parallax-2 -->
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="center">
+                    <h5 class="header col s12 light" style="text-shadow: 2px 2px 4px #000000;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                    </h5>
+                </div>
+            </div>
         </div>
+        <div class="parallax"><img src="./assets/imgs/train.jpg" alt=""></div>
+    </div>
+    <!-- parallax-2 -->
+
+
+    <div class="container">
+        <h1 class="grey-text center col l6 scrollspy" id="aboutus">About Us</h1>
+        <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+        <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+        <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
     </div>
 
+    <!-- parallax-3 -->
+    <div class="parallax-container center">
+        <div class="parallax"><img src="./assets/imgs/eminem.jpg" alt=""></div>
+    </div>
+    <!-- parallax-3 -->
 
     <!-- JQuery minified  -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
@@ -134,6 +169,7 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
+            $('.scrollspy').scrollspy();
         })
     </script>
 </body>
