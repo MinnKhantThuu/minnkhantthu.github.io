@@ -1,0 +1,24 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container {
+    width: 100%;
+}
+
+.text-center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

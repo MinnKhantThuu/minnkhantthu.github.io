@@ -4,39 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minn Khant Thu</title>
+    <title>NeoN World</title>
+    <!-- Import fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <style>
-        body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .margin-top20 {
-            margin-top: 20px;
-        }
-
-        .parallax-container {
-            min-height: 380px;
-            line-height: 0;
-            height: auto;
-            color: rgba(255, 255, 255, .9);
-        }
-
-        .parallax-container {
-            width: 100%;
-        }
-
-        .text-center {
-            margin: auto;
-            width: 50%;
-            padding: 10px;
-        }
-    </style>
-
+    <!-- ko Paing CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+    </link>
 
 </head>
 
@@ -54,11 +32,11 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#aboutus">about us</a></li>
-                        <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
+                        <li><a href="#signin" class="btn indigo accent-4">sign-in</a></li>
                     </ul>
                     <ul class="sidenav grey lighten-3" id='menu'>
-                        <li><a href="#aboutus">about me</a></li>
-                        <li><a href="#" class="btn indigo accent-4">sing-up</a></li>
+                        <li><a href="#aboutus">about us</a></li>
+                        <li><a href="#signin" class="btn indigo accent-4">sign-in</a></li>
                     </ul>
                 </div>
             </nav>
@@ -75,7 +53,7 @@
                 </div>
 
                 <div class="row center">
-                    <a href="#" id="download-button" class="btn-large waves-effect indigo accent-4">sign-in</a>
+                    <a href="#signup" id="download-button" class="btn-large waves-effect indigo accent-4">sign-up</a>
                 </div>
                 <br><br>
 
@@ -160,6 +138,99 @@
     </div>
     <!-- parallax-3 -->
 
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col s12 m6 l6" style="margin-top: 40px;">
+                <h3 class="center">Why should I login?</h3>
+                <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
+                    Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley</p>
+                <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
+                    Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley</p>
+                <p class="grey-text center">orem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
+                    Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley</p>
+
+            </div>
+            <div class="col s12 m6 l5 offset-l1 scrollspy" id="signup">
+                <h2 class="center indigo-text"
+                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Sign Up</h2>
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input type="text" id='name' name='name'>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id='email' name='email'>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input type="password" id='password' name='password' class="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" onclick="show()">
+                            <span>Show Password</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" class="datepicker" id='calender'>
+                        <label for="calender">Birthday</label>
+                    </div>
+                    <div class="input-field">
+                        <p>
+                            <label>
+                                <input name="gender" type="radio" checked />
+                                <span>Male</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="gender" type="radio" />
+                                <span>Female</span>
+                            </label>
+                        </p>
+                    </div>
+                    <button class="btn waves-effect waves-light right indigo" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="row">
+        <a href="https://www.facebook.com/kwee.khant22">
+            <i class="fa fa-facebook blue-text col l2"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-instagram blue-text col l2"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-github blue-text col l2"></i>
+        </a>
+    </div> -->
+
+    <footer class="footer-copyright purple accent-1 black-text" style="padding-bottom: 10px;">
+        <div class="container center" style="margin-top: 20px;">
+            copyright©2020 <a class="black-text" href="https://www.facebook.com/kwee.khant22">Hacky7</a>
+        </div>
+    </footer>
+
+
     <!-- JQuery minified  -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -169,8 +240,17 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
-            $('.scrollspy').scrollspy();
+            $('.datepicker').datepicker();
+            $('.scrollspy').scrollSpy();
         })
+        let pass = document.getElementById('password')
+        let show = () => {
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
     </script>
 </body>
 
