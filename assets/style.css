@@ -24,6 +24,6 @@ body {
 }
 
 nav{
-    display:fixed;
+    position:fixed;
     z-index:1000;
 }
