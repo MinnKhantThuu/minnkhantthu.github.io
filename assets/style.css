@@ -22,3 +22,8 @@ body {
     width: 50%;
     padding: 10px;
 }
+
+nav{
+    display:fixed;
+    z-index:1000;
+}
